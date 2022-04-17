@@ -1,0 +1,40 @@
+.team__networks {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+.networks-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--time-function), fill 250ms var(--time-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.networks-icon {
+  background-size: contain;
+  fill: var(--icon-basic-color);
+
+  transition: fill 250ms var(--time-function);
+
+  &:hover {
+    fill: var(--invert-text-color);
+  }
+  .social-link:hover & {
+    fill: var(--invert-text-color);
+  }
+  
+  .social-link:focus & {
+    fill: var(--invert-text-color);
+  }
+}
