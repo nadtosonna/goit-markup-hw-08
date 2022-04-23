@@ -1,36 +1,36 @@
-.clients {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 50px;
-  }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
-  }
-.clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 92px;
-  border: 1px solid var(--icon-basic-color);
-  border-radius: 4px;
-  transition: border 250ms var(--time-function);
+// .clients {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: 50px;
+//   }
+//   .clients__item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// .clients__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 170px;
+//   height: 92px;
+//   border: 1px solid var(--icon-basic-color);
+//   border-radius: 4px;
+//   transition: border 250ms var(--time-function);
 
-  &:hover,
-  &:focus {
-    border: 1px solid var(--accent-color);
-  }
-}
-.clients__icon {
-  fill: var(--icon-basic-color);
-  transition: fill 250ms var(--time-function);
+//   &:hover,
+//   &:focus {
+//     border: 1px solid var(--accent-color);
+//   }
+// }
+// .clients__icon {
+//   fill: var(--icon-basic-color);
+//   transition: fill 250ms var(--time-function);
 
-  .clients__link:hover & {
-    fill: var(--accent-color);
-  }
+//   .clients__link:hover & {
+//     fill: var(--accent-color);
+//   }
   
-  .clients__link:focus & {
-    fill: var(--accent-color);
-  }
-}
+//   .clients__link:focus & {
+//     fill: var(--accent-color);
+//   }
+// }

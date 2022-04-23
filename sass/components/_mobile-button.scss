@@ -1,0 +1,12 @@
+.mobile-button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+    cursor: pointer;
+
+    &:hover .mobile-button__icon, &:focus .mobile-button__icon {
+        fill: var(--accent-color);
+    }
+}

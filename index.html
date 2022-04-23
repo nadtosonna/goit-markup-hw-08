@@ -20,7 +20,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a class="logo header__logo_black" lang="en" href="./index.html"
@@ -55,6 +55,39 @@
             >
           </li>
         </ul>
+        <button type="button" class="mobile-button" data-menu-open>
+          <svg class="mobile-button__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-button mobile-menu__close-button" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-mobile-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-menu__pages">
+            <li class="mobile-menu__item"><a href="/">Студия</a></li>
+            <li class="mobile-menu__item"><a href="/">Портфолио</a></li>
+            <li class="mobile-menu__item"><a href="/">Контакты</a></li>
+          </ul>
+          <ul class="mobile-menu__contacts">
+            <li class="mobile-menu__contact-tel">
+              <a href="tel:+380961111111" class="mobile-menu__tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu__contact-email">
+              <a href="mailto:info@devstudio.com" class="mobile-menu__email">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__links">
+            <li class="mobile-menu__socials"><a href="">Instagram</a></li>
+            <li class="mobile-menu__socials"><a href="">Twitter</a></li>
+            <li class="mobile-menu__socials"><a href="">Facebook</a></li>
+            <li class="mobile-menu__socials"><a href="">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -69,49 +102,49 @@
         </div>
       </section>
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="features">
-            <li class="features__list">
+            <li class="features__item">
               <svg class="features__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-Group-1"></use>
               </svg>
-              <h3 class="features__item">Внимание к деталям</h3>
+              <h3 class="features__name">Внимание к деталям</h3>
               <p class="features__description">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="features__list">
+            <li class="features__item">
               <svg class="features__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-Group-2"></use>
               </svg>
-              <h3 class="features__item">Пунктуальность</h3>
+              <h3 class="features__name">Пунктуальность</h3>
               <p class="features__description">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="features__list">
+            <li class="features__item">
               <svg class="features__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-Group-3"></use>
               </svg>
-              <h3 class="features__item">Планирование</h3>
+              <h3 class="features__name">Планирование</h3>
               <p class="features__description">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="features__list">
+            <li class="features__item">
               <svg class="features__icon" width="270" height="120">
                 <use href="./images/icons.svg#icon-Group-4"></use>
               </svg>
-              <h3 class="features__item">Современные технологии</h3>
+              <h3 class="features__name">Современные технологии</h3>
               <p class="features__description">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
           </ul>
 
-          <h2 class="section-header">Чем мы занимаемся</h2>
+          <h2 class="section-header work-examples">Чем мы занимаемся</h2>
           <ul class="work-examples">
             <li class="work-examples__item">
               <img src="./images/box-1.jpg" alt="Процесс написания кода" width="370" height="294" />
@@ -137,9 +170,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-header">Наша команда</h2>
           <ul class="team">
@@ -308,9 +341,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-header">Постоянные клиенты</h2>
 
@@ -359,10 +392,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__block">
         <div class="contact-data">
           <a class="logo footer__logo_white" lang="en" href="./index.html"
@@ -426,9 +459,9 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="close-button">
           <svg
@@ -501,7 +534,8 @@
           <button class="modal-button" type="submit">Отправить</button>
         </form>
       </div>
-    </div>
-    <script src="./modal.js"></script>
+    </div> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

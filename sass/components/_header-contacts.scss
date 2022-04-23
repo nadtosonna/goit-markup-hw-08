@@ -1,39 +1,42 @@
 .contacts-header {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-
-  & .contacts+.contacts {
-    margin-left: 50px;
-  }
+    display: none;
 }
+// .contacts-header {
+//   display: flex;
+//   align-items: center;
+//   margin-left: auto;
 
-.contacts {
-  display: flex;
-  align-items: center;
+//   & .contacts+.contacts {
+//     margin-left: 50px;
+//   }
+// }
 
-  & .link {
-    display: flex;
-    align-items: center;
-    padding: 32px 0;
-    color: var(--main-text-color);
-    font-weight: 500;
+// .contacts {
+//   display: flex;
+//   align-items: center;
+
+//   & .link {
+//     display: flex;
+//     align-items: center;
+//     padding: 32px 0;
+//     color: var(--main-text-color);
+//     font-weight: 500;
   
-    transition: color 250ms var(--time-function);
-  }
+//     transition: color 250ms var(--time-function);
+//   }
 
-  & .link:hover,
-  & .link:focus {
-    color: var(--accent-color);
-  }
-}
+//   & .link:hover,
+//   & .link:focus {
+//     color: var(--accent-color);
+//   }
+// }
 
-.icon-header {
-  margin-right: 10px;
-  fill: var(--main-text-color);
+// .icon-header {
+//   margin-right: 10px;
+//   fill: var(--main-text-color);
 
-  .contacts .link:hover & {
-    fill: var(--accent-color);
-  }
-}
+//   .contacts .link:hover & {
+//     fill: var(--accent-color);
+//   }
+// }
 
