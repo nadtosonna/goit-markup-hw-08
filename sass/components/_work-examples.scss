@@ -15,11 +15,15 @@
   }
 }
 .section-header {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--header-text-color);
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  @media screen and (min-width:1200px) {
+  margin-bottom: 50px; 
+  }
 }
 .section:nth-child(3) {
   background-color: var(--button-background);

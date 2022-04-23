@@ -29,7 +29,9 @@
     }
 }
 .features__icon {
+    width: 100%;
     margin-bottom: 30px;
+    background-color: var(--button-background);
 }
 
 .features__name {
