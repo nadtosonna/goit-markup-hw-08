@@ -69,8 +69,8 @@
             </svg>
           </button>
           <ul class="mobile-menu__pages">
-            <li class="mobile-menu__item"><a href="/">Студия</a></li>
-            <li class="mobile-menu__item"><a href="/">Портфолио</a></li>
+            <li class="mobile-menu__item"><a href="./index.html">Студия</a></li>
+            <li class="mobile-menu__item"><a href="./portfolio.html">Портфолио</a></li>
             <li class="mobile-menu__item"><a href="/">Контакты</a></li>
           </ul>
           <ul class="mobile-menu__contacts">
@@ -172,7 +172,7 @@
         </div>
       </section>
 
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section-header">Наша команда</h2>
           <ul class="team">
@@ -341,7 +341,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="section">
         <div class="container">
@@ -409,7 +409,7 @@
         </div>
 
         <div class="footer__socials">
-          <p class="join">присоединяйтесь</p>
+          <p class="footer__join">присоединяйтесь</p>
           <ul class="footer__networks">
             <li class="networks-item">
               <a href="" class="social-link-footer">
@@ -442,10 +442,10 @@
           </ul>
         </div>
 
-        <div class="footer-modal">
+        <div class="footer__modal">
           <label for="footer-email">Подпишитесь на рассылку</label>
           <div class="submit-email">
-            <input class="footer-input" type="email" id="footer-email" placeholder="E-mail" />
+            <input class="footer__input" type="email" id="footer-email" placeholder="E-mail" />
             <button class="footer-button" type="submit">
               <span class="send">
                 <span class="button-text-send">Подписаться</span>
@@ -461,7 +461,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="close-button">
           <svg
@@ -527,15 +527,17 @@
           <label class="checkbox-label">
             <input class="checkbox-input" type="checkbox" required />
             <span class="checkbox-icon"></span>
-            <span class="checkbox-agreement">Соглашаюсь с рассылкой и принимаю&nbsp;</span>
-            <a class="agreement-link" href="/">Условия договора</a>
+            <span class="checkbox-agreement"
+              >Соглашаюсь с рассылкой и принимаю
+              <a class="agreement-link" href="/">Условия договора</a></span
+            >
           </label>
 
           <button class="modal-button" type="submit">Отправить</button>
         </form>
       </div>
-    </div> -->
+    </div>
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
