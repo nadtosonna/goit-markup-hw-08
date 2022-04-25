@@ -663,6 +663,32 @@ header {
   fill: var(--invert-text-color);
 }
 
+@media screen and (min-width: 1200px) {
+  .submit-email {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 44px;
+    height: 44px;
+  }
+  .footer__details {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .contact-data, .footer__join {
+    text-align: start;
+  }
+  .footer__modal label {
+    text-align: start;
+  }
+}
+
 .mobile-button {
   outline: none;
   border: none;

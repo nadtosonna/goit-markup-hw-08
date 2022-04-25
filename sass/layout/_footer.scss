@@ -70,12 +70,6 @@ color: var(--invert-text-color);
   text-transform: uppercase;
   color: var(--invert-text-color);
 }
-// .footer-link {
-//   display: flex;
-//   width: 44px;
-//   height: 44px;
-// }
-
 .social-link-footer {
   display: flex;
   justify-content: center;
@@ -95,10 +89,6 @@ color: var(--invert-text-color);
 .footer__modal {
     margin-top: 60px;
 }
-// .submit-email {
-//   display: flex;
-// }
-
 .footer__modal {
   display: flex;
   flex-direction: column;
@@ -171,4 +161,23 @@ display: block;
 .icon-send {
   display: block;
   fill: var(--invert-text-color);
+}
+@media screen and (min-width:1200px) {
+  .submit-email {
+    display: flex;
+  }
+  .footer-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+  }
+  .footer__details {
+    align-items: flex-start;
+  }
+  .contact-data, .footer__join {
+    text-align: start;
+  }
+  .footer__modal label {
+    text-align: start;
+  }
 }
