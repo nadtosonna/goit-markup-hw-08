@@ -228,6 +228,10 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
     margin-left: auto;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    font-weight: 500;
   }
 }
 
@@ -240,6 +244,8 @@ header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    font-size: 14px;
+    line-height: 1.14;
   }
   .contacts-header .contacts + .contacts {
     margin-left: 50px;
@@ -275,6 +281,12 @@ header {
   }
   .contacts .link:hover .icon-header {
     fill: var(--accent-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts.email {
+    margin-bottom: 10px;
   }
 }
 
@@ -375,6 +387,13 @@ header {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 
