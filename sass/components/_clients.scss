@@ -1,7 +1,71 @@
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 30px;
+
+    @media screen and (min-width:1200px) {
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .clients__item:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+.clients__item:not(:last-child) {
+    margin-bottom: 30px;
+}
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 210px;
+    height: 92px;
+    border: 1px solid var(--icon-basic-color);
+    border-radius: 4px;
+    transition: border 250ms var(--time-function);
+
+    &:hover,
+    &:focus {
+        border: 1px solid var(--accent-color);
+    }
+
+    @media screen and (min-width:1200px) {
+        width: 170px;
+        }
+}
+.clients__icon {
+    fill: var(--icon-basic-color);
+    transition: fill 250ms var(--time-function);
+
+    .clients__link:hover & {
+        fill: var(--accent-color);
+    }
+
+    .clients__link:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+
+
+
+
+
+
+
 // .clients {
 //     display: flex;
 //     flex-wrap: wrap;
 //     justify-content: space-around;
+// }
+// .clients__item:hover, .clients__item:focus {
+//     border: 1px solid var(--accent-color);
+//     border-radius: 4px;
 // }
 // .clients__link {
 //     display: flex;
@@ -29,22 +93,18 @@
 //     fill: var(--accent-color);
 // }
 // }
-// .clients__item:not(:last-child) {
-//     margin-bottom: 30px;
+
+
+// .clients {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: 50px;
+//   }
+//   .clients__item:not(:last-child) {
+//     margin-right: 30px;
+//   }
+// .clients__link {
+//   width: 170px;
+//   height: 92px;
 // }
-// .clients__item:nth-child(5) {
-//     margin-bottom: 0;
-// }
-// // .clients {
-// //   display: flex;
-// //   justify-content: center;
-// //   align-items: center;
-// //   margin-top: 50px;
-// //   }
-// //   .clients__item:not(:last-child) {
-// //     margin-right: 30px;
-// //   }
-// // .clients__link {
-// //   width: 170px;
-// //   height: 92px;
-// // }
