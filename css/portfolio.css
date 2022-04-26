@@ -288,6 +288,12 @@ header {
   .contacts.email {
     margin-bottom: 10px;
   }
+  .link.email, .link.tel {
+    color: var(--main-text-color);
+  }
+  .icon-header {
+    fill: var(--main-text-color);
+  }
 }
 
 .filter {
@@ -376,7 +382,6 @@ header {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  white-space: nowrap;
 }
 
 .project-description {
@@ -440,6 +445,9 @@ header {
   }
   .projects-item {
     width: 354px;
+  }
+  .project-name {
+    white-space: nowrap;
   }
 }
 

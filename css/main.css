@@ -288,6 +288,12 @@ header {
   .contacts.email {
     margin-bottom: 10px;
   }
+  .link.email, .link.tel {
+    color: var(--main-text-color);
+  }
+  .icon-header {
+    fill: var(--main-text-color);
+  }
 }
 
 .hero {
@@ -538,7 +544,6 @@ header {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    width: 354px;
   }
 }
 
@@ -555,17 +560,22 @@ header {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 1199px) {
-  .team__member:last-child {
+.team__member:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team__member:nth-child(3) {
     margin-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__member {
+    width: 270px;
     margin-right: 30px;
   }
-  .team__member:nth-child(4) {
+  :nth-child(4) {
     margin-right: 0;
   }
 }

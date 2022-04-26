@@ -56,5 +56,11 @@
     .contacts.email {
         margin-bottom: 10px;
     }
+    .link.email, .link.tel {
+      color: var(--main-text-color);
+    }
+    .icon-header {
+      fill: var(--main-text-color);
+    }
 }
 
