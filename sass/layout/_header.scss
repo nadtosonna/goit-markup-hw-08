@@ -1,9 +1,12 @@
 .header {
   position: relative;
+}
+  @media screen and (max-width:767px) {
+    .header {
     padding-top: 16px;
     padding-bottom: 16px;
-}
-
+    }
+  }
 .container.header-container {
   display: flex;
   align-items: center;

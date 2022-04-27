@@ -9,6 +9,13 @@
     flex-direction: column;
     align-items: center;
 
+    @media screen and (min-width:768px) and (max-width:1199px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
     @media screen and (min-width:1200px) {
         flex-direction: row;
         align-items: baseline;
@@ -86,8 +93,10 @@ color: var(--invert-text-color);
     background-color: var(--accent-color);
   }
 }
-.footer__modal {
+@media screen and (max-width:767px) {
+  .footer__modal {
     margin-top: 60px;
+  }
 }
 .footer__modal {
   display: flex;

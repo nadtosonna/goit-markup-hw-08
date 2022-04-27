@@ -1,19 +1,25 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
-
-    @media screen and (min-width:768px) {
-      justify-content: center;
-    }
-  @media screen and (min-width:1200px) {
+  margin-bottom: 40px;
+  margin-top: -15px;
+  margin-left: -8px;
+}
+.filter__item {
+  margin-top: 15px;
+  margin-left: 8px;
+}
+@media screen and (min-width:768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+    } 
+@media screen and (min-width:1200px) {
+  .filter {
     margin-bottom: 50px;
   }
-}
-.filter > li:not(:last-child) {
-  margin-right: 8px;
-  margin-bottom: 15px;
-}
+    }
 .portfolio-button {
   padding: 6px 22px;
   cursor: pointer;
@@ -37,6 +43,4 @@
         0px 2px 2px rgba(0, 0, 0, 0.12);
     }
 }
-.filter > .portfolio-button:not(last-child) {
-  margin-right: 8px;
-}
+
