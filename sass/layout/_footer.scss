@@ -35,6 +35,10 @@
 .footer__socials {
     text-align: center;
 
+    @media screen and (max-width:767px) {
+      margin-bottom: 60px;
+    }
+
     @media screen and (min-width:1200px) {
         margin-left: 70px;
     }
@@ -91,11 +95,6 @@ color: var(--invert-text-color);
   &:hover,
   &:focus {
     background-color: var(--accent-color);
-  }
-}
-@media screen and (max-width:767px) {
-  .footer__modal {
-    margin-top: 60px;
   }
 }
 .footer__modal {

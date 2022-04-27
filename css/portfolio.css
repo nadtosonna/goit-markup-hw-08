@@ -360,6 +360,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 48px 40px;
   height: 100vh;
   width: 100%;
 }
@@ -376,7 +377,6 @@ header {
 }
 
 .mobile-menu__pages {
-  margin-left: 40px;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
@@ -392,16 +392,11 @@ header {
   margin-bottom: 0;
 }
 
-.mobile-menu__item:first-child {
-  margin-top: 48px;
-}
-
 .mobile-menu__link:hover, .mobile-menu__link:focus, .mobile-menu__link:active {
   color: var(--accent-color);
 }
 
 .mobile-menu__contacts {
-  margin-left: 40px;
   font-weight: 500;
   letter-spacing: 0.02em;
 }
@@ -432,10 +427,6 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 48px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
@@ -452,6 +443,16 @@ header {
 
 .mobile-link {
   color: var(--accent-color);
+}
+
+.mobile-menu__contacts-block {
+  margin-bottom: 64px;
+}
+
+.mobile-menu__wrapper {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .filter {
@@ -702,6 +703,12 @@ header {
   text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+  .footer__socials {
+    margin-bottom: 60px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__socials {
     margin-left: 70px;
@@ -777,12 +784,6 @@ header {
 
 .social-link-footer:hover, .social-link-footer:focus {
   background-color: var(--accent-color);
-}
-
-@media screen and (max-width: 767px) {
-  .footer__modal {
-    margin-top: 60px;
-  }
 }
 
 .footer__modal {
