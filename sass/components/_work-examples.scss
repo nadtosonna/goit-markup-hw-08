@@ -25,9 +25,6 @@
   margin-bottom: 50px; 
   }
 }
-.section:nth-child(3) {
-  background-color: var(--button-background);
-}
 .work-examples__pannel {
   display: flex;
   position: absolute;
@@ -43,4 +40,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--invert-text-color);
+}
+@media screen and (max-width:1199px) {
+  .section.work-examples {
+    display: none;
+  }
 }

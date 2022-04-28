@@ -121,6 +121,16 @@ header {
   }
 }
 
+.section:nth-child(4) {
+  background-color: var(--button-background);
+}
+
+@media screen and (min-width: 1200px) {
+  .section.work-examples {
+    padding-top: 0;
+  }
+}
+
 .header {
   position: relative;
 }
@@ -911,6 +921,9 @@ header {
   }
   .footer__modal label {
     text-align: start;
+  }
+  .contact-data {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=portfolio.css.map */

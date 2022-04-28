@@ -9,9 +9,6 @@
     @media screen and (min-width:768px) and (max-width:1199px) {
         justify-content: space-between;
     }
-    @media screen and (min-width:1200px) {
-    margin-bottom: 94px;
-}
 }
 .features__item {   
 @media screen and (min-width:768px) {
@@ -42,4 +39,9 @@
     width: 100%;
     line-height: 1.71;
     letter-spacing: 0.03em;
+}
+@media screen and (max-width:767px) {
+    .features__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
 }
